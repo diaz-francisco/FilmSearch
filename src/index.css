@@ -19,8 +19,9 @@ input {
   display: flex;
   margin: auto;
   margin-top: 20px;
-  height: 6vh;
-  width: 80vw;
+  min-height: 4vh;
+  min-width: 80vw;
+  max-width: 80vw;
   font-size: 20px;
   border: solid 3px black;
 }
@@ -31,6 +32,16 @@ button {
   align-items: center;
   border: solid 5px green;
   padding: 30px;
+}
+
+.result-amount {
+  display: flex;
+  color: red;
+  border: solid 3px pink;
+  height: auto;
+  width: 90vw;
+  justify-content: center;
+  align-items: center;
 }
 
 .flex {
@@ -86,4 +97,34 @@ button {
   border: solid 3px black;
   height: 100%;
   min-width: 100%;
+}
+
+.panel {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  border: solid 3px black;
+  width: 85vw;
+  height: auto;
+  margin: 30px;
+  align-items: center;
+}
+.poster {
+  border: solid 3px green;
+}
+
+.movie-details {
+  display: flex;
+  margin: 10px;
+  padding: 20px;
+  height: auto;
+  width: 100%;
+  background-color: rgb(90, 83, 83);
+  border: solid 3px orange;
+}
+
+@media screen and (max-width: 600px) {
+  .panel {
+    flex-direction: column; /* Stack children vertically on smaller screens */
+  }
 }
