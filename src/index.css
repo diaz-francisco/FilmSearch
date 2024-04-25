@@ -85,25 +85,26 @@ button {
   margin-left: 35%;
   width: 60vw;
   height: auto;
-  background-color: #f44336;
+  background-color: #d82012;
   color: white;
-  border: solid 3px yellow;
+  border-radius: 40px;
 }
 
 .error-text {
   display: flex;
-  color: blue;
+  color: whitesmoke;
   justify-content: center;
   align-items: center;
   border: solid 3px black;
-  height: auto;
+  height: 100%;
+  width: 100%;
 }
 
 .panel {
   display: flex;
   flex-direction: row;
   padding: 20px;
-  border: solid 3px black;
+  background-color: rgb(90, 83, 83);
   width: auto;
   height: auto;
   margin: 30px;
@@ -113,7 +114,6 @@ button {
   width: 300px;
   height: 400px;
   object-fit: fill;
-  border: solid 3px green;
 }
 
 .movie-details {
@@ -122,8 +122,6 @@ button {
   padding: 20px;
   height: auto;
   width: 100%;
-  background-color: rgb(90, 83, 83);
-  border: solid 3px orange;
 }
 
 .form {
@@ -132,6 +130,20 @@ button {
 
 .form::placeholder {
   text-indent: 0;
+}
+.title {
+  font-size: 30px;
+}
+
+.description {
+  font-size: 25px;
+  text-decoration: underline;
+}
+.plot {
+  font-size: 20px;
+}
+.rrr {
+  font-size: 20px;
 }
 
 @media screen and (max-width: 600px) {
