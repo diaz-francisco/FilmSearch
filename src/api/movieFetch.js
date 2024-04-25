@@ -10,8 +10,6 @@ export const movieFetch = async (searchText, moviesCallback, errCallback) => {
         movieFetchPlot(movie.imdbID, errCallback)
       );
       const plot = await Promise.all(plotPromise);
-      const [firstMovie] = plot;
-      const allMovies = plot.reduce((acc, curr) => ({ ...acc, ...curr }), {});
 
       moviesCallback(plot);
       errCallback(errCallback);

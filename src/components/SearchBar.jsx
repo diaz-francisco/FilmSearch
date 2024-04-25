@@ -20,19 +20,21 @@ export default function SearchBar() {
 
   return (
     <>
-      <form onSubmit={onSubmited}>
-        <input
-          className="form"
-          type="text"
-          placeholder="   Search here..."
-          value={searchedFor}
-          onChange={(e) => setSearchedFor(e.target.value)}
-        />
-      </form>
+      <div className="result-bar">
+        <form onSubmit={onSubmited}>
+          <input
+            className="form"
+            type="text"
+            placeholder="   Search here..."
+            value={searchedFor}
+            onChange={(e) => setSearchedFor(e.target.value)}
+          />
+        </form>
+      </div>
       <div className="reults-container">
         {movies.length > 0 && (
           <p className="result-amount">
-            Showing {movies.length} results for {submitedText}
+            Displaying {movies.length} matches for "{submitedText}"
           </p>
         )}
       </div>
@@ -49,6 +51,7 @@ export default function SearchBar() {
           <MoviePanel movies={movies} />
         </div>
       </div>
+      {console.log(movies)}
     </>
   );
 }

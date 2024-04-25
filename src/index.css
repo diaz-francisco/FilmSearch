@@ -36,12 +36,12 @@ button {
 
 .result-amount {
   display: flex;
-  color: red;
-  border: solid 3px pink;
+  color: whitesmoke;
   height: auto;
-  width: 90vw;
+  width: auto;
   justify-content: center;
-  align-items: center;
+  margin-top: 20px;
+  font-size: 20px;
 }
 
 .flex {
@@ -64,7 +64,7 @@ button {
   list-style: none;
   background: linear-gradient(to right, rgb(236, 123, 2), rgb(165, 91, 0));
   min-width: 100vw;
-  height: 10 vh;
+  height: auto;
   align-items: center;
   justify-content: space-between;
 }
@@ -84,6 +84,7 @@ button {
   justify-content: space-between;
   margin-left: 35%;
   width: 60vw;
+  height: auto;
   background-color: #f44336;
   color: white;
   border: solid 3px yellow;
@@ -95,8 +96,7 @@ button {
   justify-content: center;
   align-items: center;
   border: solid 3px black;
-  height: 100%;
-  min-width: 100%;
+  height: auto;
 }
 
 .panel {
@@ -104,23 +104,34 @@ button {
   flex-direction: row;
   padding: 20px;
   border: solid 3px black;
-  width: 85vw;
+  width: auto;
   height: auto;
   margin: 30px;
   align-items: center;
 }
 .poster {
+  width: 300px;
+  height: 400px;
+  object-fit: fill;
   border: solid 3px green;
 }
 
 .movie-details {
-  display: flex;
+  flex-direction: column;
   margin: 10px;
   padding: 20px;
   height: auto;
   width: 100%;
   background-color: rgb(90, 83, 83);
   border: solid 3px orange;
+}
+
+.form {
+  text-indent: 15px;
+}
+
+.form::placeholder {
+  text-indent: 0;
 }
 
 @media screen and (max-width: 600px) {
