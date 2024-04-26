@@ -9,8 +9,6 @@ export default function SearchBar() {
   const [movies, setMovies] = useState([]);
   const [err, setErr] = useState(null);
 
-  const [desMovies] = movies;
-
   function onSubmited(e) {
     e.preventDefault();
     setErr(null);
@@ -25,7 +23,7 @@ export default function SearchBar() {
           <input
             className="form"
             type="text"
-            placeholder="   Search here..."
+            placeholder="   Search movies here..."
             value={searchedFor}
             onChange={(e) => setSearchedFor(e.target.value)}
           />

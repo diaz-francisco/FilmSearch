@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function ErrAlert({ err, submitedText, setErr }) {
+export default function ErrAlert({ err, setErr }) {
   return (
     <div className="alert">
       <div>
