@@ -5,8 +5,8 @@ export default function ErrAlert({ err, submitedText, setErr }) {
     <div className="alert">
       <div>
         <strong className="error-text">
-          {`Oops!`}
-          {err}.
+          {`Whoops!`}
+          {err}
         </strong>
       </div>{" "}
       <button
