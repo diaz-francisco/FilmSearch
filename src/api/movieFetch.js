@@ -1,7 +1,7 @@
 export const movieFetch = async (searchText, moviesCallback, errCallback) => {
   try {
     const res = await fetch(
-      `http://www.omdbapi.com/?s=${searchText}}&apikey=bb60c74c&type=movie`
+      `https://www.omdbapi.com/?s=${searchText}}&apikey=bb60c74c&type=movie`
     );
     const parsed = await res.json();
 
@@ -25,7 +25,7 @@ export const movieFetch = async (searchText, moviesCallback, errCallback) => {
 const movieFetchPlot = async (id, errCallback) => {
   try {
     const res = await fetch(
-      `http://www.omdbapi.com/?i=${id}&plot=full&apikey=bb60c74c`
+      `https://www.omdbapi.com/?i=${id}&plot=full&apikey=bb60c74c`
     );
     const parse = await res.json();
 

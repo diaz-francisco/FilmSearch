@@ -6,7 +6,10 @@ export default function Header() {
           <ul className="nav-bar flex">
             <li>
               <a className="logo">
-                <img alt="film logo" src="icon.png"></img>
+                <img
+                  alt="film logo"
+                  src="https://i.imgur.com/yq0KjVc.png"
+                ></img>
               </a>
             </li>
             <li>
