@@ -124,6 +124,7 @@ button {
   width: 300px;
   height: 400px;
   object-fit: fill;
+  padding-left: 25px;
 }
 
 .movie-details {
