@@ -11,7 +11,7 @@ export default function Header() {
             </li>
             <li>
               <a className="link" target="_blank">
-                Fylm
+                Cinnemon
               </a>
             </li>
           </ul>
