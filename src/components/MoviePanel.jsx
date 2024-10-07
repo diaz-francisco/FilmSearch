@@ -6,7 +6,7 @@ export default function MoviePanel({ movies }) {
           <div className="panel" key={index}>
             <img
               className="poster"
-              src={movie.Poster !== "N/A" ? movie.Poster : "image-missing.svg"}
+              src={movie.Poster !== "N/A" ? movie.Poster : "https://raw.githubusercontent.com/MrCheks/FilmSearch/756265bcd9696223d2193fa8c4cbd98a6e55040c/image-missing.svg"}
             ></img>
             <div className="movie-details">
               <h2 className="title">{movie.Title}</h2>
