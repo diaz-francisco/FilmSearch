@@ -5,4 +5,4 @@ I've always had a fascination with finding good movies, and now that I also have
 
 Usage: Just enter a film in the search bar and you're good to go.
 
-Deployed Here: https://mrcheks.github.io/FilmSearch/
+Deployed Here: https://diaz-francisco.github.io/FilmSearch/
